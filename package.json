@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "eslint": "^8.13.0"
   }
 }

@@ -5,16 +5,48 @@
    <meta charset="UTF-8" />
    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="style.css">
-   <script src="main.js" type="module"></script>
-   <title>Vite App</title>
+   <!-- 
+      Split all styles into files based on related functionality.
+      This just makes it a little easier to remember where a specific
+      style declaration is.
+   -->
+
+   <!-- Reset all browser defaults so I have a clean slate to work with -->
+   <link rel="stylesheet" href="/style/reset.css">
+
+   <!-- Responsive sizing variables -->
+   <link rel="stylesheet" href="/style/sizing.css">
+
+   <!-- Local fonts -->
+   <link rel="stylesheet" href="/style/fonts.css">
+
+   <!-- Global styles for the app -->
+   <link rel="stylesheet" href="/style/global.css">
+
+   <!--
+      Link to the script as a module so that
+      I can use ES6 modules to separate code
+      functionality. Also, ES Modules are strict
+      by default!
+
+      * All JS code will be in the /src directory.
+   -->
+   <script src="/src/main.js" type="module"></script>
+   <title>Simple RSS</title>
 </head>
 
 <body>
    <main>
-      <header></header>
+      <header>
+         <div class="header-inner">
+            <a href="/" class="site-link">
+               <h1 class="site-link-text">Simple RSS</h1>
+            </a>
+         </div>
+      </header>
       <aside id="sidebar"></aside>
-      <main></main>
+      <main>
+      </main>
       <footer></footer>
    </main>
 </body>
