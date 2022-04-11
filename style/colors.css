@@ -1,0 +1,85 @@
+:root {
+   /* CSS HSL */
+--olivine: hsl(81, 37%, 67%);
+--olivine-0: hsl(81, 37%, 42%);
+--olivine-1: hsl(81, 37%, 47%);
+--olivine-2: hsl(81, 37%, 52%);
+--olivine-3: hsl(81, 37%, 57%);
+--olivine-4: hsl(81, 37%, 62%);
+--olivine-5: var(--olivine)
+--olivine-6: hsl(81, 37%, 72%);
+--olivine-7: hsl(81, 37%, 77%);
+--olivine-8: hsl(81, 37%, 82%);
+--olivine-9: hsl(81, 37%, 87%);
+
+--light-salmon: hsl(18, 81%, 71%);
+--light-salmon-1: hsl(18, 81%, 51%);
+--light-salmon-2: hsl(18, 81%, 56%);
+--light-salmon-3: hsl(18, 81%, 61%);
+--light-salmon-4: hsl(18, 81%, 66%);
+--light-salmon-5: var(--light-salmon);
+--light-salmon-6: hsl(18, 81%, 81%);
+--light-salmon-7: hsl(18, 81%, 86%);
+--light-salmon-8: hsl(18, 81%, 91%);
+--light-salmon-9: hsl(18, 81%, 96%);
+
+--air-superiority-blue: hsl(200, 39%, 59%);
+--air-superiority-blue-1: hsl(200, 39%, 44%);
+--air-superiority-blue-2: hsl(200, 39%, 49%);
+--air-superiority-blue-3: hsl(200, 39%, 54%);
+--air-superiority-blue-4: hsl(200, 39%, 59%);
+--air-superiority-blue-5: var(--air-superiority-blue);
+--air-superiority-blue-6: hsl(200, 39%, 69%);
+--air-superiority-blue-7: hsl(200, 39%, 74%);
+--air-superiority-blue-8: hsl(200, 39%, 79%);
+--air-superiority-blue-9: hsl(200, 39%, 84%);
+
+--space-cadet: hsl(224, 40%, 22%);
+--space-cadet-1: hsl(224, 40%, 2%);
+--space-cadet-2: hsl(224, 40%, 7%);
+--space-cadet-3: hsl(224, 40%, 12%);
+--space-cadet-4: hsl(224, 40%, 17%);
+--space-cadet-5: var(--space-cadet);
+--space-cadet-6: hsl(224, 40%, 27%);
+--space-cadet-7: hsl(224, 40%, 32%);
+--space-cadet-8: hsl(224, 40%, 37%);
+--space-cadet-9: hsl(224, 40%, 42%);
+
+
+--rich-black-fogra-39: hsl(30, 11%, 4%);
+--rich-black-fogra-39-1: hsl(30, 11%, 9%);
+--rich-black-fogra-39-2: hsl(30, 11%, 14%);
+--rich-black-fogra-39-3: hsl(30, 11%, 19%);
+--rich-black-fogra-39-4: hsl(30, 11%, 24%);
+--rich-black-fogra-39-5: hsl(30, 11%, 29%);
+--rich-black-fogra-39-6: hsl(30, 11%, 34%);
+--rich-black-fogra-39-7: hsl(30, 11%, 39%);
+--rich-black-fogra-39-8: hsl(30, 11%, 44%);
+--rich-black-fogra-39-9: hsl(30, 11%, 49%);
+--rich-black-fogra-39-10: hsl(30, 11%, 54%);
+--rich-black-fogra-39-11: hsl(30, 11%, 59%);
+--rich-black-fogra-39-11: hsl(30, 11%, 64%);
+--rich-black-fogra-39-12: hsl(30, 11%, 69%);
+--rich-black-fogra-39-13: hsl(30, 11%, 74%);
+--rich-black-fogra-39-14: hsl(30, 11%, 79%);
+--rich-black-fogra-39-15: hsl(30, 11%, 84%);
+--rich-black-fogra-39-16: hsl(30, 11%, 89%);
+--rich-black-fogra-39-17: hsl(30, 11%, 94%);
+
+--foreground: var(--rich-black-fogra-39-1);
+--background: var(--rich-black-fogra-39-17);
+--link: var(--light-salmon-3);
+--hover: var(--light-salmon-1);
+}
+
+
+/* 
+   media query for setting colors according to OS/Browser-level preferences
+   @see: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+*/
+@media (prefers-color-scheme: dark) {
+   :root {
+      --foreground: var(--rich-black-fogra-39-17);
+      --background: var(--rich-black-fogra-39-1);
+   }
+}
