@@ -133,10 +133,13 @@ h3 {
 
 header {
   grid-area: header;
+  display: flex;
+
 }
 
 aside#sidebar {
   grid-area: sidebar;
+  width: clamp(10rem, 15vw, 30rem);
 }
 
 main {
@@ -184,12 +187,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   body {
     padding: var(--space-s) var(--space-s);
     grid-template-areas: 
     "header header"
-    /* "sidebar sidebar" */
     "main main"
     "footer footer";
   }
